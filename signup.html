@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connect - Welcome Back</title>
+    <title>Connect - Create Account</title>
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -20,7 +20,7 @@
             </div>
             <nav class="nav">
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -31,19 +31,51 @@
         <main class="main">
             <div class="hero-section">
                 <div class="hero-content">
-                    <h1>Welcome Back</h1>
-                    <p>Connect with friends, share moments, and stay updated with the world around you.</p>
+                    <h1>Join Connect</h1>
+                    <p>Create your account and start connecting with friends, sharing moments, and discovering new
+                        opportunities.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <span>Connect with friends</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-share-alt"></i>
+                            <span>Share your moments</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Secure & private</span>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="login-card">
                     <div class="card-header">
-                        <h2>Sign In</h2>
-                        <p>Enter your credentials to access your account</p>
+                        <h2>Create Account</h2>
+                        <p>Fill in your details to get started</p>
                     </div>
 
                     <form class="login-form" action="#">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" id="firstName" placeholder="Enter first name" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" id="lastName" placeholder="Enter last name" required>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="form-group">
-                            <label for="email">Email</label>
+                            <label for="email">Email Address</label>
                             <div class="input-wrapper">
                                 <i class="fas fa-envelope"></i>
                                 <input type="email" id="email" placeholder="Enter your email" required>
@@ -51,25 +83,51 @@
                         </div>
 
                         <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-phone"></i>
+                                <input type="tel" id="phone" placeholder="Enter phone number" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
                             <label for="password">Password</label>
                             <div class="input-wrapper">
                                 <i class="fas fa-lock"></i>
-                                <input type="password" id="password" placeholder="Enter your password" required>
+                                <input type="password" id="password" placeholder="Create a password" required>
+                                <i class="fas fa-eye toggle-password"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" id="confirmPassword" placeholder="Confirm your password"
+                                    required>
                                 <i class="fas fa-eye toggle-password"></i>
                             </div>
                         </div>
 
                         <div class="form-options">
                             <label class="checkbox-wrapper">
-                                <input type="checkbox" id="remember">
+                                <input type="checkbox" id="terms" required>
                                 <span class="checkmark"></span>
-                                Remember me
+                                I agree to the <a href="#terms">Terms of Service</a> and <a href="#privacy">Privacy
+                                    Policy</a>
                             </label>
-                            <a href="forgot-password.html" class="forgot-link">Forgot Password?</a>
+                        </div>
+
+                        <div class="form-options">
+                            <label class="checkbox-wrapper">
+                                <input type="checkbox" id="newsletter">
+                                <span class="checkmark"></span>
+                                Subscribe to our newsletter for updates
+                            </label>
                         </div>
 
                         <button type="submit" class="btn btn-primary">
-                            <span>Sign In</span>
+                            <span>Create Account</span>
                             <i class="fas fa-arrow-right"></i>
                         </button>
                     </form>
@@ -81,16 +139,16 @@
                     <div class="social-login">
                         <button class="btn btn-social btn-google">
                             <i class="fab fa-google"></i>
-                            <span>Continue with Google</span>
+                            <span>Sign up with Google</span>
                         </button>
                         <button class="btn btn-social btn-facebook">
                             <i class="fab fa-facebook-f"></i>
-                            <span>Continue with Facebook</span>
+                            <span>Sign up with Facebook</span>
                         </button>
                     </div>
 
                     <div class="signup-prompt">
-                        <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+                        <p>Already have an account? <a href="index.html">Sign in</a></p>
                     </div>
                 </div>
             </div>
